@@ -271,22 +271,6 @@ const MainLayout = ({ children }) => {
                                 <ListItemText primary="Books" />
                             </ListItem>
                         </Link>
-                        <Link color="inherit" href="/authors">
-                            <ListItem button>
-                                <ListItemIcon>
-                                    <LayersIcon />
-                                </ListItemIcon>
-                                <ListItemText primary="Authors" />
-                            </ListItem>
-                        </Link>
-                        <Link color="inherit" href="/posts">
-                            <ListItem button>
-                                <ListItemIcon>
-                                    <PostAddIcon />
-                                </ListItemIcon>
-                                <ListItemText primary="Posts" />
-                            </ListItem>
-                        </Link>
                     </List>
                 </Drawer>
                 <main className={classes.content}>
