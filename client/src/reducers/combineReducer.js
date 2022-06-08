@@ -25,19 +25,6 @@ import {
     orderListMyReducer,
 } from './orderReducers';
 
-import {
-    authorListReducer,
-    authorDetailReducer,
-    authorTopReducer
-} from './authorReducers';
-
-import {
-    postListReducer,
-    postDetailReducer,
-    postCommentCreateReducer,
-    postTopViewReducer,
-} from './postReducers';
-
 import { cartReducer } from './cartReducers';
 
 const reducer = combineReducers({
@@ -57,14 +44,7 @@ const reducer = combineReducers({
     orderDetail: orderDetailReducer,
     orderPay: orderPayReducer,
     orderDeliver: orderDeliverReducer,
-    orderListMy: orderListMyReducer,
-    authorList: authorListReducer,
-    authorDetail: authorDetailReducer,
-    authorTop: authorTopReducer,
-    postList: postListReducer,
-    postDetail: postDetailReducer,
-    postCommentCreate: postCommentCreateReducer,
-    postTopView: postTopViewReducer,
+    orderListMy: orderListMyReducer
 });
 
 export default reducer;

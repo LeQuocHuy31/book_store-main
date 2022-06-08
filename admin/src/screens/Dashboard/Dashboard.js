@@ -16,7 +16,6 @@ import Chart from './Chart';
 import NewUsers from './NewUsers';
 import NewOrders from './NewOrders';
 import NewBooks from './NewBooks';
-import NewPosts from './NewPosts';
 import imageAdmin from 'src/animation.gif';
 
 const useStyles = makeStyles((theme) => ({
@@ -98,14 +97,9 @@ const Dashboard = ({ history }) => {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={6}>
                     <Paper className={classes.paper}>
                         <NewBooks />
-                    </Paper>
-                </Grid>
-                <Grid item xs={3}>
-                    <Paper className={classes.paper}>
-                        <NewPosts />
                     </Paper>
                 </Grid>
             </Grid>

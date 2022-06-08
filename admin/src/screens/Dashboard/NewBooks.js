@@ -15,7 +15,7 @@ import { listBooks } from 'src/actions/bookActions';
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
-        maxWidth: '36ch',
+        maxWidth: '72ch',
         backgroundColor: theme.palette.background.paper,
     },
     inline: {

@@ -33,14 +33,6 @@ import {
     authorUpdateReducer,
 } from 'src/reducers/authorReducers'
 
-import { 
-    postListReducer,
-    postDetailReducer,
-    postCreateReducer,
-    postDeleteReducer,
-    postUpdateReducer,
-} from 'src/reducers/postReducers'
-
 const reducer = combineReducers({
     bookList: bookListReducer,
     bookDetail: bookDetailsReducer,
@@ -63,11 +55,6 @@ const reducer = combineReducers({
     authorCreate: authorCreateReducer,
     authorDelete: authorDeleteReducer,
     authorUpdate: authorUpdateReducer,
-    postList: postListReducer,
-    postDetail: postDetailReducer,
-    postCreate: postCreateReducer,
-    postDelete: postDeleteReducer,
-    postUpdate: postUpdateReducer,
 });
 
 export default reducer;

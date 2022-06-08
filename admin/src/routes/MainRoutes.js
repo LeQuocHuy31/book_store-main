@@ -10,10 +10,8 @@ import OrderList from 'src/screens/Orders/OrderList';
 import Order from 'src/screens/Orders/Order';
 import AuthorList from 'src/screens/Authors/AuthorList';
 import AuthorEdit from 'src/screens/Authors/AuthorEdit';
-import PostList from 'src/screens/Posts/PostList';
-import PostEdit from 'src/screens/Posts/PostEdit';
 import Profile from 'src/screens/Setting/Profile';
-import NotFound from 'src/screens/Setting/NotFound';
+
 
 export default function MainRoutes() {
     return (
@@ -31,9 +29,6 @@ export default function MainRoutes() {
                     <Route path="/authors" component={AuthorList} exact />
                     <Route path="/authors/:id/edit" component={AuthorEdit} exact />
                     <Route path="/authors/:pageNumber" component={AuthorList} exact />
-                    <Route path="/posts" component={PostList} exact />
-                    <Route path="/posts/:id/edit" component={PostEdit} exact />
-                    <Route path="/posts/:pageNumber" component={PostList} exact />
                     <Route path="/profile" component={Profile} exact />
                 </Switch>
             </ScrollToTop>
